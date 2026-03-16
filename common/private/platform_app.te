@@ -6,3 +6,6 @@ hal_client_domain(platform_app, hal_lineage_livedisplay)
 
 # Allow PowerShare HAL service to be found
 hal_client_domain(platform_app, hal_lineage_powershare)
+
+# Custom ROM Hide
+allow platform_app custom_rom_hide_data_file:file { create open read write getattr setattr unlink };

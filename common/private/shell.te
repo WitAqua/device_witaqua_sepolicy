@@ -1,1 +1,5 @@
 get_prop(shell, custom_version_prop)
+
+# Custom ROM Hide
+allow shell adb_data_file:dir { search getattr };
+allow shell custom_rom_hide_data_file:file { create open read write getattr setattr unlink };
